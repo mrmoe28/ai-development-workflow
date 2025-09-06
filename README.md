@@ -24,7 +24,7 @@ This repository contains everything you need to set up a seamless parallel devel
 
 ### **1. Clone This Repository**
 ```bash
-git clone https://github.com/yourusername/ai-development-workflow.git
+git clone https://github.com/mrmoe28/ai-development-workflow.git
 cd ai-development-workflow
 ```
 
@@ -34,18 +34,31 @@ cd ai-development-workflow
 3. Paste into your Claude Code user memory
 4. Now Claude Code knows the workflow on any device!
 
-### **3. Copy Files to Your Project**
+### **3. Set Up Quick Reference System (Recommended)**
 ```bash
-# Copy workflow files to your project
-cp templates/* /path/to/your/project/
-cp scripts/* /path/to/your/project/scripts/
+# Set up aliases for easy access from any directory
+./scripts/setup-aliases.sh
+
+# Reload your shell profile
+source ~/.zshrc  # or ~/.bashrc
 ```
 
-### **4. Initialize Your Project**
+### **4. Use Quick Reference Commands**
 ```bash
-cd /path/to/your/project
-chmod +x scripts/check-deployment.sh
-./scripts/check-deployment.sh
+# From any directory, access workflow files without adding them to your app:
+workflow-memory    # Show Claude memory card
+workflow-error     # Show error prevention guide
+workflow-status    # Show development status template
+workflow-setup     # Show workflow setup guide
+workflow-docs      # Show main documentation
+workflow-list      # List all available files
+```
+
+### **5. Alternative: Copy Files to Your Project**
+```bash
+# Only if you want files in your project directory
+cp templates/* /path/to/your/project/
+cp scripts/* /path/to/your/project/scripts/
 ```
 
 ## 📁 **Repository Structure**
